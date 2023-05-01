@@ -8,7 +8,9 @@ textInput.addEventListener("input", textChange);
 function textChange(event) {
 	if (!event.currentTarget.value) {
 		textOutput.textContent = "Anonymous";
-	} else textOutput.textContent = event.currentTarget.value;
+	} else {
+		textOutput.textContent = event.currentTarget.value;
+	}
 };
 
 // Також, як варіант, прописати умову для if - event.currentTarget.value.length === 0
