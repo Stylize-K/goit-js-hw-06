@@ -17,9 +17,10 @@ function hundleSubmit(event) {
 
     if (email.value === '' || password.value === '') {
         return alert("Please, fill in all the fields!")
-    }
+    } else {
 
-    const data = { email: email.value, password: password.value };
-    console.log(data);
-    event.currentTarget.reset();
+        const data = { email: email.value, password: password.value };
+        console.log(data);
+        event.currentTarget.reset();
+    }
 };
