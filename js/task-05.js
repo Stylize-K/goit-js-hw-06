@@ -6,7 +6,7 @@ const textOutput = document.querySelector("#name-output");
 textInput.addEventListener("input", textChange);
 
 function textChange(event) {
-	if (!event.currentTarget.value) {
+	if (!event.currentTarget.value.trim()) {
 		textOutput.textContent = "Anonymous";
 	} else {
 		textOutput.textContent = event.currentTarget.value;
